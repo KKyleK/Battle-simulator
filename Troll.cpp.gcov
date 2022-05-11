@@ -1,0 +1,76 @@
+        -:    0:Source:Troll.cpp
+        -:    0:Graph:Troll.gcno
+        -:    0:Data:Troll.gcda
+        -:    0:Runs:4
+        -:    0:Programs:4
+        -:    1:#include "Troll.h"
+        -:    2:
+        -:    3:
+        4:    4:Troll::Troll(int row, int col) : Evil_Warrior(row,col, 100)
+        -:    5:
+        -:    6:{
+        4:    7:}
+        -:    8:
+        -:    9:
+        4:   10:char Troll::get_symbol() const
+        -:   11:{   
+        4:   12:    return adjust_symbol('T');
+        -:   13:}
+        -:   14:
+        -:   15:
+        1:   16:int Troll::roll_to_hit() const
+        -:   17:{
+        -:   18:    int hit;
+        -:   19:
+        1:   20:    hit = roll(20, 90);
+        -:   21:
+        1:   22:    return hit;
+        -:   23:}
+        -:   24:
+        -:   25:
+        -:   26:
+        -:   27:
+        -:   28:
+        1:   29:int Troll::roll_for_damage() const
+        -:   30:{
+        -:   31:    int damage;
+        1:   32:    damage = roll(10, 30);
+        -:   33:
+        1:   34:    return damage;
+        -:   35:}
+        -:   36:
+        -:   37:
+        -:   38:
+        1:   39:int Troll::needed_to_hit() const
+        -:   40:{
+        1:   41:    int need_to_hit = 40;
+        -:   42:
+        -:   43:
+        1:   44:    return need_to_hit;
+        -:   45:}
+        -:   46:
+        -:   47:
+        -:   48:
+        -:   49:/*****
+        -:   50: *
+        -:   51: *  FUNCTION: get_range
+        -:   52: *
+        -:   53: *  PURPOSE: A troll has slightly more range than the average warrior
+        -:   54: *
+        -:   55: *****/
+        1:   56:double Troll::get_range() const {
+        -:   57:    
+        1:   58:    return 2.85;
+        -:   59:
+        -:   60:}
+        -:   61:
+        -:   62:
+        1:   63:Warrior* Troll::clone() const
+        -:   64:{
+        -:   65:    Warrior *troll;
+        1:   66:    troll = new Troll(0,0);
+        -:   67:
+        -:   68:
+        -:   69:
+        1:   70:    return troll;
+       12:   71:}

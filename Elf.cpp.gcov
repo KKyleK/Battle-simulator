@@ -1,0 +1,124 @@
+        -:    0:Source:Elf.cpp
+        -:    0:Graph:Elf.gcno
+        -:    0:Data:Elf.gcda
+        -:    0:Runs:2
+        -:    0:Programs:2
+        -:    1:#include "Elf.h"
+        -:    2:
+        -:    3:/*****
+        -:    4: * 
+        -:    5: *  PRIVATE DATA MEMBERS:
+        -:    6: *
+        -:    7: *  - arrows: an elf has 15 arrows. after he uses all of them, he has to go
+        -:    8: *            melee.
+        -:    9: *
+        -:   10: *****/
+        -:   11:
+        -:   12:
+        5:   13:Elf::Elf(int row, int col) : Good_Warrior(row,col, 15) 
+        -:   14:
+        -:   15:{
+        -:   16:
+        5:   17:    arrows = 15;
+        5:   18:}
+        -:   19:
+        -:   20:
+        -:   21:
+        4:   22:char Elf::get_symbol() const
+        -:   23:{ 
+        -:   24:
+        4:   25:    return adjust_symbol('E');
+        -:   26:}
+        -:   27:
+        -:   28:
+       21:   29:int Elf::roll_to_hit() const
+        -:   30:{
+        -:   31:    int hit;
+        -:   32:
+       21:   33:    hit = roll(20, 100);
+        -:   34:
+       21:   35:    return hit;
+        -:   36:}
+        -:   37:
+        -:   38:
+        -:   39:
+       21:   40:int Elf::roll_for_damage() const
+        -:   41:{
+        -:   42:    int damage;
+        -:   43:
+       21:   44:    if (arrows > 0)
+       17:   45:	damage = roll(1, 20);
+        -:   46:    
+        -:   47:    else
+        4:   48:	damage = roll(1,5);
+        -:   49:    
+       21:   50:    return damage;
+        -:   51:}
+        -:   52:
+        -:   53:
+        -:   54:
+        7:   55:int Elf::needed_to_hit() const
+        -:   56:{
+        7:   57:    int need_to_hit = 60;
+        -:   58:
+        -:   59:
+        7:   60:    return need_to_hit;
+        -:   61:}
+        -:   62:
+        -:   63:/*****
+        -:   64: *
+        -:   65: *  FUNCTION: get_range
+        -:   66: *
+        -:   67: *  PURPOSE: an Elf has more range if they have arrows to shoot.
+        -:   68: *
+        -:   69: *****/
+       24:   70:double Elf::get_range() const
+        -:   71:{
+        -:   72:
+        -:   73:    double range;
+        -:   74:
+       24:   75:    if (arrows > 0)
+       17:   76:	range = 20;
+        -:   77:    else
+        7:   78:	range = 1.5;
+        -:   79:    
+       24:   80:    return range;
+        -:   81:	
+        -:   82:}
+        -:   83:
+        -:   84:/*****
+        -:   85: *
+        -:   86: *  FUNCTION: attack
+        -:   87: *
+        -:   88: *  PURPOSE: Elfs either attack with their arrows or with their blades.
+        -:   89: *           When an elf makes an attack, they loose an arrow
+        -:   90: *
+        -:   91: *****/
+       21:   92:void Elf::attack(Warrior *opponent)
+        -:   93:{
+        -:   94:
+        -:   95:    int damage;
+        -:   96:    int hit;
+        -:   97:
+        -:   98:    
+       21:   99:    damage = roll_for_damage();
+       21:  100:    hit = roll_to_hit();
+        -:  101:    
+        -:  102:    
+       21:  103:    opponent->receive_attack(hit ,damage);
+        -:  104:    
+       21:  105:    arrows = arrows -1;
+        -:  106:    
+       21:  107:    return;
+        -:  108:}
+        -:  109:
+        -:  110:
+        -:  111:
+        -:  112:
+        1:  113:Warrior* Elf::clone() const
+        -:  114:{
+        -:  115:    Warrior *elf;
+        1:  116:    elf = new Elf(0,0);
+        -:  117:
+        1:  118:    return elf;
+        6:  119:}

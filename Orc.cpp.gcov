@@ -1,0 +1,66 @@
+        -:    0:Source:Orc.cpp
+        -:    0:Graph:Orc.gcno
+        -:    0:Data:Orc.gcda
+        -:    0:Runs:3
+        -:    0:Programs:3
+        -:    1:#include "Orc.h"
+        -:    2:
+        -:    3:
+        -:    4:
+        -:    5:
+       17:    6:Orc::Orc(int row, int col) : Evil_Warrior(row,col, 15)
+        -:    7:
+        -:    8:{
+       17:    9:}
+        -:   10:
+        -:   11:
+        -:   12:
+       19:   13:char Orc::get_symbol() const
+        -:   14:{
+        -:   15:
+        -:   16:
+       19:   17:    return adjust_symbol('O');
+        -:   18:}
+        -:   19:
+        -:   20:
+        9:   21:int Orc::roll_to_hit() const
+        -:   22:{
+        -:   23:    int hit;
+        -:   24:
+        9:   25:    hit = roll(1, 100);
+        -:   26:
+        9:   27:    return hit;
+        -:   28:}
+        -:   29:
+        -:   30:
+        -:   31:
+        -:   32:
+        -:   33:
+        9:   34:int Orc::roll_for_damage() const
+        -:   35:{
+        -:   36:    int damage;
+        9:   37:    damage = roll(3, 15);
+        -:   38:
+        9:   39:    return damage;
+        -:   40:}
+        -:   41:
+        -:   42:
+        -:   43:
+       23:   44:int Orc::needed_to_hit() const
+        -:   45:{
+       23:   46:    int need_to_hit = 50;
+        -:   47:
+        -:   48:
+       23:   49:    return need_to_hit;
+        -:   50:}
+        -:   51:
+        -:   52:
+        1:   53:Warrior* Orc::clone() const
+        -:   54:{
+        -:   55:    Warrior *orc;
+        1:   56:    orc = new Orc(0,0);
+        -:   57:
+        -:   58:
+        -:   59:
+        1:   60:    return orc;
+        9:   61:}

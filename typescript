@@ -1,0 +1,157 @@
+Script started on Mon 06 Apr 2020 10:50:55 PM MDT
+[kkoiv395@ins.mtroyal.ca ~/c1633/assignments/a5/phase3> pwd
+/users/kkoiv395/c1633/assignments/a5/phase3
+[kkoiv395@ins.mtroyal.ca ~/c1633/assignments/a5/phase3> ls- al[K[K[K[K -al
+total 908
+drwxr-xr-x 3 kkoiv395 students   4096 Apr  6 22:50 [0m[01;34m.[0m
+drwxr-xr-x 5 kkoiv395 students   4096 Apr  2 22:29 [01;34m..[0m
+-rwxr-xr-x 1 kkoiv395 students 218137 Apr  6 22:44 [01;32mbattle[0m
+-rw-r--r-- 1 kkoiv395 students   4435 Apr  2 13:55 battle.cpp
+-rw-r--r-- 1 kkoiv395 students  61992 Apr  6 22:44 battle.o
+-rw-r--r-- 1 kkoiv395 students    173 Apr  6 22:46 bg_end_world.txt
+-rw-r--r-- 1 kkoiv395 students   1412 Apr  6 22:23 Elf.cpp
+-rw-r--r-- 1 kkoiv395 students    882 Apr  6 22:16 Elf.h
+-rw-r--r-- 1 kkoiv395 students  57616 Apr  6 22:44 Elf.o
+-rw-r--r-- 1 kkoiv395 students    182 Apr  2 22:35 Evil_Warrior.cpp
+-rw-r--r-- 1 kkoiv395 students    225 Apr  5 18:12 Evil_Warrior.h
+-rw-r--r-- 1 kkoiv395 students  53840 Apr  6 22:44 Evil_Warrior.o
+-rw-r--r-- 1 kkoiv395 students  12338 Apr  6 18:22 Field.cpp
+-rw-r--r-- 1 kkoiv395 students   1927 Apr  6 21:35 Field.h
+-rw-r--r-- 1 kkoiv395 students     67 Apr  6 18:15 field_melee.txt
+-rw-r--r-- 1 kkoiv395 students  75872 Apr  6 22:44 Field.o
+-rw-r--r-- 1 kkoiv395 students     92 Apr  6 19:22 field_ranged.txt
+drwxr-xr-x 2 kkoiv395 students   4096 Apr  5 19:51 [01;34mfields[0m
+-rw-r--r-- 1 kkoiv395 students     67 Apr  6 19:39 field_troll.txt
+-rw-r--r-- 1 kkoiv395 students    269 Apr  5 14:54 Good_Warrior.cpp
+-rw-r--r-- 1 kkoiv395 students    279 Apr  5 14:55 Good_Warrior.h
+-rw-r--r-- 1 kkoiv395 students  53840 Apr  6 22:44 Good_Warrior.o
+-rw-r--r-- 1 kkoiv395 students    196 Apr  6 22:45 hd_end_world.txt
+-rw-r--r-- 1 kkoiv395 students    301 Apr  6 22:49 la_end_world.txt
+-rw-r--r-- 1 kkoiv395 students   4140 Apr  6 20:41 makefile
+-rw-r--r-- 1 kkoiv395 students    739 Apr  6 21:58 Man.cpp
+-rw-r--r-- 1 kkoiv395 students    727 Apr  5 19:22 Man.h
+-rw-r--r-- 1 kkoiv395 students  56312 Apr  6 22:44 Man.o
+-rw-r--r-- 1 kkoiv395 students    529 Apr  6 22:07 Orc.cpp
+-rw-r--r-- 1 kkoiv395 students    694 Apr  6 22:25 Orc.h
+-rw-r--r-- 1 kkoiv395 students  56312 Apr  6 22:44 Orc.o
+-rw-r--r-- 1 kkoiv395 students   3452 Apr  6 19:25 test_Elf.cpp
+-rw-r--r-- 1 kkoiv395 students    349 Apr  2 21:54 test_Field.cpp
+-rw-r--r-- 1 kkoiv395 students   1925 Apr  6 18:43 test_Man.cpp
+-rw-r--r-- 1 kkoiv395 students   1923 Apr  6 19:40 test_Orc.cpp
+-rw-r--r-- 1 kkoiv395 students   1934 Apr  6 19:42 test_Troll.cpp
+-rw-r--r-- 1 kkoiv395 students    733 Apr  6 22:24 Troll.cpp
+-rw-r--r-- 1 kkoiv395 students    777 Apr  6 22:25 Troll.h
+-rw-r--r-- 1 kkoiv395 students  56800 Apr  6 22:44 Troll.o
+-rw-r--r-- 1 kkoiv395 students      0 Apr  6 22:50 typescript
+-rw-r--r-- 1 kkoiv395 students   3491 Apr  6 22:04 Warrior.cpp
+-rw-r--r-- 1 kkoiv395 students   2270 Apr  6 22:10 Warrior.h
+-rw-r--r-- 1 kkoiv395 students  64488 Apr  6 22:44 Warrior.o
+[m[kkoiv395@ins.mtroyal.ca ~/c1633/assignments/a5/phase3> make
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Man.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Warrior.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Good_Warrior.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Evil_Warrior.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Field.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c test_Man.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Elf.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Orc.cpp
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c Troll.cpp
+g++ -fprofile-arcs -ftest-coverage -lgtest -lpthread -lgtest_main Man.o test_Man.o Good_Warrior.o Evil_Warrior.o Warrior.o Field.o Orc.o Troll.o Elf.o -o test_Man
+test_Man
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from test_Man
+[ RUN      ] test_Man.GetSymbol
+[       OK ] test_Man.GetSymbol (0 ms)
+[ RUN      ] test_Man.Attack
+[       OK ] test_Man.Attack (0 ms)
+[ RUN      ] test_Man.Clone
+[       OK ] test_Man.Clone (0 ms)
+[----------] 3 tests from test_Man (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 3 tests.
+gcov Man.cpp 2> /dev/null | grep -A 1 Man.cpp
+File 'Man.cpp'
+Lines executed:100.00% of 17
+Man.cpp:creating 'Man.cpp.gcov'
+
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c test_Elf.cpp
+test_Elf.cpp: In member function ‘virtual void test_Elf_AttackBow_Test::TestBody()’:
+test_Elf.cpp:45: warning: unused variable ‘counter’
+g++ -fprofile-arcs -ftest-coverage -lgtest -lpthread -lgtest_main Man.o test_Elf.o Good_Warrior.o Evil_Warrior.o Warrior.o Field.o Orc.o Troll.o Elf.o -o test_Elf
+test_Elf
+Running main() from gtest_main.cc
+[==========] Running 4 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 4 tests from test_Elf
+[ RUN      ] test_Elf.GetSymbol
+[       OK ] test_Elf.GetSymbol (0 ms)
+[ RUN      ] test_Elf.AttackBow
+[       OK ] test_Elf.AttackBow (20 ms)
+[ RUN      ] test_Elf.MeleeAttack
+[       OK ] test_Elf.MeleeAttack (14 ms)
+[ RUN      ] test_Elf.Clone
+[       OK ] test_Elf.Clone (0 ms)
+[----------] 4 tests from test_Elf (35 ms total)
+
+[----------] Global test environment tear-down
+[==========] 4 tests from 1 test case ran. (35 ms total)
+[  PASSED  ] 4 tests.
+gcov Elf.cpp 2> /dev/null | grep -A 1 Elf.cpp
+File 'Elf.cpp'
+Lines executed:100.00% of 31
+Elf.cpp:creating 'Elf.cpp.gcov'
+
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c test_Orc.cpp
+g++ -fprofile-arcs -ftest-coverage -lgtest -lpthread -lgtest_main Man.o test_Orc.o Good_Warrior.o Evil_Warrior.o Warrior.o Field.o Orc.o Troll.o Elf.o -o test_Orc
+test_Orc
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from test_Orc
+[ RUN      ] test_Orc.GetSymbol
+[       OK ] test_Orc.GetSymbol (0 ms)
+[ RUN      ] test_Orc.Attack
+[       OK ] test_Orc.Attack (19 ms)
+[ RUN      ] test_Orc.Clone
+[       OK ] test_Orc.Clone (0 ms)
+[----------] 3 tests from test_Orc (19 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (19 ms total)
+[  PASSED  ] 3 tests.
+gcov Orc.cpp 2> /dev/null | grep -A 1 Orc.cpp
+File 'Orc.cpp'
+Lines executed:100.00% of 17
+Orc.cpp:creating 'Orc.cpp.gcov'
+
+g++ -ansi -pedantic-errors -Wall -Wconversion -g -lgtest -lpthread -lgtest_main -fprofile-arcs -ftest-coverage -c test_Troll.cpp
+g++ -fprofile-arcs -ftest-coverage -lgtest -lpthread -lgtest_main Man.o test_Troll.o Good_Warrior.o Evil_Warrior.o Warrior.o Field.o Orc.o Troll.o Elf.o -o test_Troll
+test_Troll
+Running main() from gtest_main.cc
+[==========] Running 3 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 3 tests from test_Troll
+[ RUN      ] test_Troll.GetSymbol
+[       OK ] test_Troll.GetSymbol (0 ms)
+[ RUN      ] test_Troll.Attack
+[       OK ] test_Troll.Attack (9 ms)
+[ RUN      ] test_Troll.Clone
+[       OK ] test_Troll.Clone (0 ms)
+[----------] 3 tests from test_Troll (9 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 1 test case ran. (9 ms total)
+[  PASSED  ] 3 tests.
+gcov Troll.cpp 2> /dev/null | grep -A 1 Troll.cpp
+File 'Troll.cpp'
+Lines executed:100.00% of 19
+Troll.cpp:creating 'Troll.cpp.gcov'
+
+[kkoiv395@ins.mtroyal.ca ~/c1633/assignments/a5/phase3> exit
+exit
+
+Script done on Mon 06 Apr 2020 10:51:25 PM MDT
